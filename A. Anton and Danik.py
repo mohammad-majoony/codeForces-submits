@@ -1,0 +1,5 @@
+n = int(input())
+text = input()
+if text.count("A") > text.count("D") : print("Anton")
+elif text.count("A") < text.count("D") : print("Danik")
+else : print("Friendship")
