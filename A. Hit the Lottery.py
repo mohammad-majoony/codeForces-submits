@@ -1,0 +1,23 @@
+money , count = int(input()) , 0
+while(money != 0) :
+    if money >= 100 :
+        count1 = money // 100 
+        money -= count1 * 100
+        count += count1
+    if money >= 20 :
+        count1 = money // 20 ;
+        money -= count1 * 20
+        count += count1
+    if money >= 10 :
+        count1 = money // 10 ;
+        money -= count1 * 10
+        count += count1
+    if money >= 5 :
+        count1 = money // 5 ;
+        money -= count1 * 5
+        count += count1
+    if money != 0 :
+        count1 = money // 1 ;
+        money -= count1 * 1
+        count += count1
+print(count)
