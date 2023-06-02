@@ -1,1 +1,1 @@
-get(":)")
+print(left , right)  
