@@ -1,1 +1,1 @@
-print(left , right)  
+24 - nums[0]
