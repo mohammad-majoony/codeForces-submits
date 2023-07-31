@@ -1,0 +1,17 @@
+one , two , three = map(int,input().split())
+four , five , six = map(int,input().split())
+seven , eight , nine = map(int,input().split())
+
+def calculator(a , b , c , d = 0 , e = 0) : return ((1 + a + b + c + d + e) % 2)
+
+print(calculator(one , two , four) , end="")
+print(calculator(one , two , three , five) , end="") 
+print(calculator(three , two , six) , end="")
+print()
+print(calculator(one , four , five , seven) , end="")
+print(calculator(five , two , four , eight , six ), end="")
+print(calculator(six , three , five , nine) , end="")
+print()
+print(calculator(seven , four , eight) , end="")
+print(calculator(eight , seven , nine , five) , end="")
+print(calculator(nine , six , eight) , end="")
