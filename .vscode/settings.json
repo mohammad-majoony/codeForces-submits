@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.html": "django-html",
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "cmath": "cpp"
+    }
+}
