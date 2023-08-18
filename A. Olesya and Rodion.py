@@ -1,0 +1,5 @@
+lenght , div = map(int,input().split())
+div = str(div)
+if lenght < len(div) : quit(print(-1))
+num = div + ("".join(["0"] * (lenght - len(div))))
+print(num)
