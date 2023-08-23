@@ -6,7 +6,7 @@ int main(){
     for(int i = 0 ; i < tc ; i++){
         cin >> length ;
         map<int , int> table ;
-        unsigned long long int count = 0 ;
+        size_t count = 0 ;
         for(int index = 0 ; index < length ; index++){
             cin >> num ;
             count += table[num - index] ;
