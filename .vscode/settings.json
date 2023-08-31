@@ -1,19 +1,6 @@
 {
     "files.associations": {
         "*.html": "django-html",
-        "iostream": "cpp",
-        "ostream": "cpp",
-        "limits": "cpp",
-        "chrono": "cpp",
-        "ranges": "cpp",
-        "variant": "cpp",
-        "valarray": "cpp",
-        "barrier": "cpp",
-        "random": "cpp",
-        "latch": "cpp",
-        "semaphore": "cpp",
-        "bitset": "cpp",
-        "string_view": "cpp",
-        "regex": "cpp"
+        "iostream": "cpp"
     }
 }

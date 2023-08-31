@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+#define ll long long 
+using namespace std ;
+
+int main(){
+    
+}
+
+
+for _ in range(int(input())) :
+    length = int(input())
+    nums = list(map(int,input().split()))
