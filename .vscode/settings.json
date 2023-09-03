@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "*.html": "django-html",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cmath": "cpp",
+        "ostream": "cpp",
+        "chrono": "cpp",
+        "ranges": "cpp",
+        "variant": "cpp"
     }
 }
