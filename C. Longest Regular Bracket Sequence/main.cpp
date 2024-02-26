@@ -1,32 +1,34 @@
 #include<bits/stdc++.h>
+#define MMD ios_base::sync_with_stdio(0) ; cin.tie(0) ;
 using namespace std ;
 typedef long long ll ;
 
-int main(){
-    string text ; 
-    cin >> text ;
-    stack<char> stc ; 
-    ll count = 0 , maxi = 0 , maxiCount = 0;
+void solve(){
+    string txt ; 
+    cin >> txt ;
+    stack<int> open ; 
+    ll maxi = 0 , maxiCount = 0 , len = txt.size() , o , last ;
+    ll arr[len] ;
+    for(ll i = 0 ; i < len ; i++){
+        arr[i] = 0 ;
+        if(txt[i] == '(') open.push(i) ;
+        else if(txt[i] == ')' && open.size()){
+            o = open.top() ;
+            open.pop() ;
+            last = (o - 1 >= 0) ? arr[o - 1] : 0 ;
+            arr[i] = i - o + 1 + last ;
 
-    for(ll index = 0 ; index < text.size() ; index++){
-        if(stc.size() != 0 && text[index] == ')' && stc.top() == '('){
-            count += 2 ;
-            if(count == maxi) maxiCount += 1 ;
-            if(count > maxi){
-                maxi = count ;
+            if(arr[i] > maxi){
+                maxi = arr[i] ; 
                 maxiCount = 1 ;
-            }
+            }else if(arr[i] == maxi) maxiCount++ ;
         }
-        else if(text[index] == ')'){
-            if(count == maxi) maxiCount += 1 ;
-            if(count > maxi){
-                maxi = count ;
-                maxiCount = 1 ;
-            }
-            count = 0 ;
-        }
-        else if(text[index] == '(') stc.push('(') ;
     }
 
     cout << maxi << " " << ((maxi != 0) ? maxiCount : 1)  ;
+}
+
+int main(){
+    MMD 
+    solve() ;
 }
